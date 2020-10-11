@@ -1,0 +1,58 @@
+a {
+	font-size: 70px
+}
+
+input {
+	width: 100%;
+	font-size: 70px
+}
+
+pre {
+	font-size: 30px
+}
+
+textarea {
+	width: 100%;
+	font-size: 70px
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	font-size: 30px
+}
+
+tr.firstrow {
+
+}
+
+tr.odd {
+	background-color: #eef0df
+}
+
+.time {
+	background-color: blue
+} 
+
+.poop {
+	background-color: #474605
+}
+
+.pee {
+	background-color: #d7fc19
+}
+
+.p2 {
+	background-color: #8c880d
+}
+
+.feed {
+	background-color: #eef0df
+}
+
+#success {
+	background-color: #52fc19;
+	font-size: 70px
+}
+

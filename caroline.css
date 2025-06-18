@@ -23,10 +23,6 @@ table {
 	font-size: 30px
 }
 
-tr.firstrow {
-
-}
-
 tr.odd {
 	background-color: #eef0df
 }
@@ -53,6 +49,11 @@ tr.odd {
 
 #success {
 	background-color: #52fc19;
+	font-size: 70px
+}
+
+#failure {
+	background-color: #a02222;
 	font-size: 70px
 }
 

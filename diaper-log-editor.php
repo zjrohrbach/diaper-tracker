@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <html>
 <head>
 	<title>Editing Caroline's Feeding & Diaper log</title>
@@ -6,6 +7,20 @@
 </head>
 <body>
 <?php
+
+if (!isset($_SESSION['authorized']) || !$_SESSION['authorized']){
+	echo '
+		<form method="post" action="diaper-track.php">
+			<p>
+				Password:
+				<input type="password" name="pass" />
+			</p>
+			<input type="submit" value="Log In">
+		</form>
+	';
+	echo '</body></html>';
+	exit;
+}
 
 if (isset($_POST['submit'])) {
 		if(copy('diaper-log.txt','backups/diaper-log.txt.backup'.date('Ymd-H.i.s'))) {

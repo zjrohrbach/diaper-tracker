@@ -52,6 +52,7 @@ if (isset($_GET['time'])) {
 	file_put_contents('diaper-log.txt', $entry_insert, FILE_APPEND | LOCK_EX );
 	sleep(1);
 	header("Location: diaper-track.php?success=true");
+  echo '<script>window.location.href="diaper-track.php?success=true"</script>';
 	exit();
 }
 
